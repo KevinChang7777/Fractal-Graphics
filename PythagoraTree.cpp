@@ -1,3 +1,4 @@
+//unfinished
 #include<graphics.h>
 #include<cmath>
 #include<conio.h>
@@ -7,14 +8,14 @@ struct point {
 	double x;
 	double y;
 }a,b,c,d,e;
-//·µ»ØbÈÆaĞı×ªangle»¡¶ÈµÄ×ø±ê
+//è¿”å›bç»•aæ—‹è½¬angleå¼§åº¦çš„åæ ‡
 point rotate(point a, point b, double angle) {
 	point c;
 	c.x = a.x +(b.x-a.x) * cos(angle) + (b.y-a.y) * sin(angle);
 	c.y = a.y +(b.y-a.y) * cos(angle) - (b.x-a.x) * sin(angle);
 	return c;
 }
-//µÃµ½a,bµÄÖĞµã
+//å¾—åˆ°a,bçš„ä¸­ç‚¹
 point zoom(point a, point b) {
 	point c;
 	c.x = (a.x + b.x) / 2;
